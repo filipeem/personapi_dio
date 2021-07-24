@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.br.CPF;
 
 import javax.validation.Valid;
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 import java.util.List;
@@ -30,6 +31,9 @@ public class PersonDTO {
     @NotEmpty
     @CPF
     private String cpf;
+
+    @NotEmpty
+    private String Email;
 
     private String birthDate;
 
